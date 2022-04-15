@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ST | Web Developer | Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="./assets/logo.ico" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <div class="up">
+                    <img src="./assets/logo.png" alt="logo" />
+                    <span>Sougata</span>
+                </div>
+                <span>Web Developer</span>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li class="item"><a href="#home">Home</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#my-skill">My Skills</a></li>
+                    <li class="item"><a href="#work">Work</a></li>
+                    <li class="item"><a href="#contact">Contact</a></li>
+                    <li class="item"><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="home" class="section-home">
+            <span class="tags top-tags"> &lt;html&gt; <br /> </span>
+            <div class="text-zone">
+                <div class="main-text">
+                    <div class="line-one">
+                        <p class="split">Hi,</p>
+                    </div>
+                    <div class="line-two">
+                        <p class="split">I’m Sougata,</p>
+                    </div>
+                    <div class="line-three">
+                        <p class="split">web developer</p>
+                    </div>
+                </div>
+                <p class="gray-text">
+                    <span>&lt;p&gt; </span>
+                    Front End Developer <span>&lt;/p&gt;</span>
+                </p>
+            </div>
+            <div class="button">
+                <span class="bg"></span>
+                <span class="base"></span>
+                <span class="text">Contact me!</span>
+            </div>
+            <p class="one scroll"><span>Scroll Down &nbsp;</span> →</p>
+            <p class="two scroll"><span>Scroll Down &nbsp;</span> →</p>
+            <canvas id="canvas-one"></canvas>
+        </section>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                let script = document.createElement("script");
+                script.src = "script.js";
+                document.body.appendChild(script);
+                script = document.createElement("script");
+                script.src = "canvas.js";
+                document.body.appendChild(script);
+            });
+        </script>
+    </body>
+</html>
