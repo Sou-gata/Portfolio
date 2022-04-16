@@ -1,8 +1,7 @@
 const canvas = document.querySelector("#canvas-one");
 const ctx = canvas.getContext("2d");
-let sectionHomeInfo = document
-    .querySelector(".section-home")
-    .getBoundingClientRect();
+const sectionHome = document.querySelector(".section-home");
+let sectionHomeInfo = sectionHome.getBoundingClientRect();
 canvas.width = sectionHomeInfo.width;
 canvas.height = sectionHomeInfo.height;
 let particleArr = [];
@@ -50,7 +49,8 @@ function animation() {
     requestAnimationFrame(animation);
 }
 animation();
-window.addEventListener("mousemove", (e) => {
+sectionHome.addEventListener("mousemove", (e) => {
+    sectionHomeInfo = sectionHome.getBoundingClientRect();
     mouse.x = e.x - sectionHomeInfo.x;
     mouse.y = e.y - sectionHomeInfo.y;
     for (let i = 0; i < 5; i++) {

@@ -20,3 +20,42 @@ blastElement.forEach((element) => {
         }, 1000);
     });
 });
+const container = ".skills";
+const texts = [
+    "Html",
+    "CSS3",
+    "JavaScript",
+    "JQuery",
+    "Bootstrap",
+    "Sass",
+    "React",
+    "Next Js",
+    "Node Js",
+    "Java",
+    "Python",
+    "Git",
+    "Json",
+    "npm",
+    "C++",
+];
+let radius = "300";
+window.addEventListener("resize", resize);
+function resize() {
+    const skills = document.querySelector(".section-about .skills");
+    skills.innerHTML = "";
+    if (innerWidth > 992) {
+        radius = "300";
+    } else if (innerWidth <= 992 && innerWidth > 600) {
+        radius = "225";
+    } else if (innerWidth <= 600) {
+        radius = "175";
+    }
+    const options = { radius, itemClass: "tagcloud-item" };
+    TagCloud(container, texts, options);
+}
+resize();
+const menu = document.querySelector(".menu");
+const menuSwitch = document.querySelector(".menu-switch");
+menuSwitch.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
