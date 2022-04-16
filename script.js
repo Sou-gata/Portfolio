@@ -43,9 +43,9 @@ window.addEventListener("resize", resize);
 function resize() {
     const skills = document.querySelector(".section-about .skills");
     skills.innerHTML = "";
-    if (innerWidth > 992) {
+    if (innerWidth > 1300) {
         radius = "300";
-    } else if (innerWidth <= 992 && innerWidth > 600) {
+    } else if (innerWidth <= 1300 && innerWidth > 600) {
         radius = "225";
     } else if (innerWidth <= 600) {
         radius = "175";

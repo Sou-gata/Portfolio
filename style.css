@@ -27,6 +27,9 @@ body {
     overflow-x: hidden;
     transition: 0.3s ease;
 }
+a {
+    text-decoration: none;
+}
 /* menu */
 .menu {
     position: fixed;
@@ -81,7 +84,6 @@ body {
     line-height: 5rem;
     display: block;
     width: 100%;
-    text-decoration: none;
     transition: 0.3s ease;
 }
 .menu .item:hover > a {
@@ -132,14 +134,14 @@ body {
     position: absolute;
     margin-left: 1rem;
 }
-.text-zone {
+.section-home .text-zone {
     margin-top: 9.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 55%;
 }
-.main-text:before {
+.section-home .main-text:before {
     content: "<h1>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
@@ -148,7 +150,7 @@ body {
     margin-top: -2rem;
     left: 7rem;
 }
-.main-text:after {
+.section-home .main-text:after {
     content: "</h1>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
@@ -160,7 +162,7 @@ body {
 .section-home .blast {
     font-size: 9rem;
 }
-.gray-text {
+.section-home .gray-text {
     font-size: 1.8rem;
     letter-spacing: 4px;
     margin-top: 3rem;
@@ -322,4 +324,99 @@ body {
 }
 .section-about {
     height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-left: 7.5rem;
+    display: flex;
+    align-items: center;
+}
+.section-about .main-text::before,
+.section-about .others::before {
+    content: "<h2>";
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+    font-size: var(--tag-font-size);
+    position: absolute;
+    margin-top: -2rem;
+    left: 7rem;
+}
+.section-about .main-text:after,
+.section-about .others::after {
+    content: "</h1>";
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+    font-size: var(--tag-font-size);
+    position: absolute;
+    margin-top: 7rem;
+    left: 7rem;
+}
+.section-about .main-text span {
+    font-size: 7rem;
+    color: #08fdd8;
+}
+.section-about .text-zone {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.section-about .others {
+    font-size: 2.6rem;
+    width: 75%;
+}
+.section-about .others::before {
+    content: "<p>";
+}
+.section-about .others::after {
+    content: "</p>";
+    margin-top: 1rem;
+}
+.section-about .others a {
+    font-size: 1.7rem;
+    color: #08fdd8;
+}
+.section-about .others p {
+    margin-top: 4rem;
+}
+@media only screen and (max-width: 1300px) {
+    .section-about {
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .section-about {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-about .main-text::before,
+    .section-about .others::before {
+        left: 3rem;
+    }
+    .section-about .main-text:after,
+    .section-about .others::after {
+        left: 3rem;
+    }
+    .tagcloud-item {
+        font-size: 1.5rem;
+        color: #08fdd8;
+        font-weight: bold;
+    }
+    .section-about .others {
+        padding-right: 3rem;
+        width: 100%;
+    }
+    .section-about .main-text span {
+        font-size: 5rem;
+    }
+    .section-about .others::before {
+        content: "<p>";
+        margin-top: -1rem;
+    }
+    .section-about .others p {
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
 }
