@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <canvas id="canvas-one"></canvas>
         <div class="menu">
             <div class="menu-wrapper">
                 <div class="menu-switch">
-                    <img class="close" src="./assets/xmark-solid.svg"></img>
-                    <img class="open" src="./assets/bars-solid.svg"></img>
+                    <img src="./assets/xmark-solid.svg" class="close" alt="" />
+                    <img src="./assets/bars-solid.svg" class="open" alt="" />
                 </div>
                 <div class="logo">
                     <div class="up">
@@ -27,9 +28,8 @@
                         <li class="item"><a href="#home">Home</a></li>
                         <li class="item"><a href="#about">About</a></li>
                         <li class="item"><a href="#my-skill">My Skills</a></li>
-                        <li class="item"><a href="#work">Work</a></li>
+                        <li class="item"><a href="#blogs">Blog</a></li>
                         <li class="item"><a href="#contact">Contact</a></li>
-                        <li class="item"><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,13 +54,14 @@
                 </p>
             </div>
             <div class="button">
-                <span class="bg"></span>
-                <span class="base"></span>
-                <span class="text">Contact me!</span>
+                <a href="#contact">
+                    <span class="bg"></span>
+                    <span class="base"></span>
+                    <span class="text">Contact me!</span>
+                </a>
             </div>
             <p class="one scroll"><span>Scroll Down &nbsp;</span> →</p>
             <p class="two scroll"><span>Scroll Down &nbsp;</span> →</p>
-            <canvas id="canvas-one"></canvas>
         </section>
         <section id="about" class="section-about">
             <div class="text-zone">
@@ -68,12 +69,239 @@
                     <p class="split">Me, Myself and I</p>
                 </div>
                 <div class="others">
-                    <p> Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the current web I've been passionate about web.</p>
-                    <p> For over a decade I had many opportunities to work in a vast spectrum of <a href="#">web technologies</a> what let me gather a significant amount of various experience. Working for companies and individuals around the globe I met and learnt from amazing and ambitious people.</p>
-                    <p>I currently work remotely with a selected freelance client base being open for new opportunities.</p>
+                    <p>
+                        Since Adobe Flash was a complete innovation, alongside
+                        with CSS 1.0 and HTML 4.01 as standards of the current
+                        web I've been passionate about web.
+                    </p>
+                    <p>
+                        For over a decade I had many opportunities to work in a
+                        vast spectrum of <a href="#">web technologies</a> what
+                        let me gather a significant amount of various
+                        experience. Working for companies and individuals around
+                        the globe I met and learnt from amazing and ambitious
+                        people.
+                    </p>
+                    <p>
+                        I currently work remotely with a selected freelance
+                        client base being open for new opportunities.
+                    </p>
                 </div>
             </div>
             <div class="skills"></div>
+        </section>
+        <section id="my-skill" class="section-skills">
+            <div class="main-text">
+                <p class="split">My skills</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="text">Html</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="text">css</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="text">javascript</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="text">react</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="text">nodejs</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="text">bootstrap</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blogs" class="section-blogs">
+            <div class="blogs-container">
+                <div class="blog">
+                    <p class="heading">React</p>
+                    <a href="#" class="topic">React JS Questions & Answers</a>
+                    <p class="description">
+                        What is JSX? JSX is a superset of JavaScript that
+                        allows...
+                    </p>
+                </div>
+                <div class="blog">
+                    <p class="heading">Web Development</p>
+                    <a href="#" class="topic">Fundamentals of HTML5 and CSS3</a>
+                    <p class="description">
+                        Hypertext markup language (HTML) structures documents
+                        such as ...
+                    </p>
+                </div>
+                <div class="blog">
+                    <p class="heading">JavaScript</p>
+                    <a href="#" class="topic">Javascript Questions & Answers</a>
+                    <p class="description">
+                        What are the possible ways to create objects in
+                        JavaScript? There...
+                    </p>
+                </div>
+                <div class="blog">
+                    <p class="heading">HTML & CSS</p>
+                    <a href="#" class="topic"
+                        >Ultimate Guide to CSS Grid Layout</a
+                    >
+                    <p class="description">
+                        Grid Container Grid Columns Grid Rows Grid Gaps CSS
+                        Grid...
+                    </p>
+                </div>
+                <div class="blog">
+                    <p class="heading">HTML & CSS</p>
+                    <a href="#" class="topic">
+                        How to use System Fonts in CSS ?
+                    </a>
+                    <p class="description">
+                        How to use System Fonts in CSS to improve your site...
+                    </p>
+                </div>
+                <div class="blog">
+                    <p class="heading">JAVASCRIPT</p>
+                    <a href="#" class="topic"
+                        >How to Sort Arrays in JavaScript?</a
+                    >
+                    <p class="description">
+                        In this article, we‟ll discuss how you can sort arrays
+                        in...
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="see-more">See more...</a>
+        </section>
+        <section id="contact" class="section-contact">
+            <div class="text-zone">
+                <div class="main-text">
+                    <p class="split">Contact me</p>
+                </div>
+                <div class="others">
+                    <p>
+                        I’m interested in freelance opportunities – especially
+                        ambitious or large projects. However, if you have other
+                        request or question, don’t hesitate to use the form.
+                    </p>
+                </div>
+                <div class="contact">
+                    <form class="contact-form" autocomplete="off">
+                        <div class="name">
+                            <input placeholder="Name" type="text" name="name" />
+                            <div class="base"></div>
+                        </div>
+                        <div class="email">
+                            <input
+                                placeholder="Email"
+                                type="email"
+                                name="email"
+                            />
+                            <div class="base"></div>
+                        </div>
+                        <div class="subject">
+                            <input
+                                placeholder="Subject"
+                                type="text"
+                                name="subject"
+                            />
+                            <div class="base"></div>
+                        </div>
+                        <div class="message">
+                            <textarea
+                                placeholder="Message"
+                                name="msg"
+                            ></textarea>
+                            <div class="base"></div>
+                        </div>
+                        <div class="container">
+                            <div class="button">
+                                <span class="bg"></span>
+                                <span class="base-2"></span>
+                                <span class="text">Send message</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    class="iframe-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.0889045174566!2d88.51297882916191!3d25.39290421052657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x580625a9a9aba9e0!2zMjXCsDIzJzM0LjUiTiA4OMKwMzAnNDguNyJF!5e0!3m2!1sen!2sin!4v1650221056542!5m2!1sen!2sin"
+                    width="450"
+                    height="375"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
         </section>
         <script type="text/javascript" src="./TagCloud.js"></script>
         <script>

@@ -59,3 +59,28 @@ const menuSwitch = document.querySelector(".menu-switch");
 menuSwitch.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
+const colors = [
+    "#e4ee89",
+    "#81d8f7",
+    "#fd2155",
+    "#ffa500",
+    "#65c18c",
+    "#e15fed",
+];
+const skills = [90, 80, 65, 60, 60, 80];
+const headings = document.querySelectorAll(".heading");
+for (let i = 0; i < headings.length; i++) {
+    const parentElement = headings[i].parentElement;
+    headings[i].style.color = colors[i];
+    parentElement.style.borderTop = `2px solid ${colors[i]}`;
+}
+const cards = document.querySelectorAll(".card");
+for (let i = 0; i < colors.length; i++) {
+    let node = cards[i].childNodes[1].childNodes[1].childNodes[1].childNodes[3];
+    node.style.stroke = colors[i];
+    node.style.strokeDashoffset = 440 - (440 * skills[i]) / 100;
+}
+const parcent = document.querySelectorAll(".percent .number h2");
+for (let i = 0; i < skills.length; i++) {
+    parcent[i].innerHTML = `${skills[i]}<span>%</span>`;
+}

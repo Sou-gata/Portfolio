@@ -49,10 +49,16 @@ function animation() {
     requestAnimationFrame(animation);
 }
 animation();
-sectionHome.addEventListener("mousemove", (e) => {
-    sectionHomeInfo = sectionHome.getBoundingClientRect();
+window.addEventListener("mousemove", (e) => {
     mouse.x = e.x - sectionHomeInfo.x;
-    mouse.y = e.y - sectionHomeInfo.y;
+    mouse.y = e.y;
+    for (let i = 0; i < 5; i++) {
+        particleArr.push(new Particle(mouse.x, mouse.y, hue));
+    }
+});
+window.addEventListener("touchmove", (e) => {
+    mouse.x = e.changedTouches[0].clientX - sectionHomeInfo.x;
+    mouse.y = e.changedTouches[0].clientY;
     for (let i = 0; i < 5; i++) {
         particleArr.push(new Particle(mouse.x, mouse.y, hue));
     }
